@@ -6,9 +6,9 @@ module OmniAuth
       option :name, 'beeminder'
 
       option :client_options, {
-        :site => 'http://dev.beeminder.com',
-        :authorize_url => 'http://dev.beeminder.com/apps/authorize',
-        :token_url => 'http://dev.beeminder.com/apps/authorize',
+        :site => 'https://www.beeminder.com',
+        :authorize_url => 'https://www.beeminder.com/apps/authorize',
+        :token_url => 'https://www.beeminder.com/apps/authorize',
         :response_type => 'token'
       }
 
