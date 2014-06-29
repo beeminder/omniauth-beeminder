@@ -18,7 +18,8 @@ module OmniAuth
 
       info do
         {
-          'id' => raw_info['username']
+          'id' => raw_info['username'],
+          'nickname' => raw_info['username'],
         }
       end
 
