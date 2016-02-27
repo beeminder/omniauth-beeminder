@@ -12,8 +12,8 @@ module OmniAuth
         :response_type => 'token'
       }
 
-      uid { 
-        raw_info['username'] 
+      uid {
+        raw_info['username']
       }
 
       info do
@@ -21,6 +21,10 @@ module OmniAuth
           'id' => raw_info['username'],
           'nickname' => raw_info['username'],
         }
+      end
+
+      def callback_url
+        full_host + script_name + callback_path
       end
 
       def raw_info
