@@ -8,6 +8,6 @@ Gem::Specification.new do |gem|
   gem.homepage = 'https://github.com/beeminder/omniauth-beeminder'
   gem.require_paths = ['lib']
   gem.summary = %q{Omniauth strategy for Beeminder}
-  gem.add_dependency 'omniauth-oauth2', '>= 1.1.1'
-  gem.version = "0.1.0"
+  gem.add_dependency 'omniauth-oauth2', ['>= 1.1.1']
+  gem.version = "0.1.2"
 end
